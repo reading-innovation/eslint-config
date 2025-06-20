@@ -45,6 +45,14 @@ const commonRules = {
   "no-alert": "off",
   "no-promise-executor-return": "off",
   "jest/no-identical-title": "off",
+  "prettier/prettier": ["error", { "endOfLine": "auto" }],
+  "import/order": [
+    "error",
+    {
+      "newlines-between": "always-and-inside-groups",
+      "groups": [["builtin", "external"], "internal"]
+    }
+  ],
 };
 
 module.exports = {
