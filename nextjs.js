@@ -20,5 +20,12 @@ module.exports = {
     /* Please add only required rules for nextjs */
     "react/react-in-jsx-scope": "off",
     "react/display-name": "off",
+    "react-hooks/exhaustive-deps": "error",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "assert": "either" // This allows either nesting the input or using htmlFor
+      }
+    ]
   },
 };
